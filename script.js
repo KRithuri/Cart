@@ -50,6 +50,12 @@ document.getElementById("root").innerHTML = categories.map((item)=>
     )
 }).join('')
 
+var cart = [];
+
+function addtocart(a){
+    cart.push({...categories[a]});
+    displayCart();
+}
 function displayCart(a){
     let j=0;
     if(categories.length == 0){

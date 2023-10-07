@@ -148,6 +148,7 @@ button:hover{
     border-radius: 3px;
     margin: 10px 10px;
 }
+
 .row-img{
     width: 50px;
     height: 50px;
@@ -166,3 +167,31 @@ button:hover{
     cursor: pointer;
     color: #333;
 }
+
+/*medaa query to deal with fixed with, columns will resize when there is an increase or decrease in width*/
+
+
+@media only screen and (max-width: 469px){
+    .container .sidebar footer{
+        max-width: 540px;
+        display: block;
+        overflow: hidden;
+    }
+  
+    .cart{
+        display: block;
+        
+    }
+    
+    .cart-item .row-img{
+        width: 30%;
+    }
+    
+    .header {
+        padding: 20px;
+        font-size: 1rem;
+        text-align: auto;
+      }
+     
+}
+

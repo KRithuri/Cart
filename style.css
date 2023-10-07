@@ -11,3 +11,14 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+.header{
+    height: 80px;
+    width: 70px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}

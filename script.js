@@ -63,6 +63,7 @@ function delElement(a){
 }
 function displayCart(a){
     let j=0;
+    document.getElementById('count').innerHTML=cart.length;
     if(categories.length == 0){
         document.getElementById('cartItem').innerHTML = "Your cart is empty";
     }else{

@@ -153,3 +153,8 @@ button:hover{
     align-items: center;
     justify-content: center;
 }
+.rowing{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}

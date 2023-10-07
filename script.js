@@ -49,3 +49,10 @@ document.getElementById("root").innerHTML = categories.map((item)=>
         </div>`
     )
 }).join('')
+
+function displayCart(a){
+    let j=0;
+    if(categories.length == 0){
+        document.getElementById('cartItem').innerHTML = "Your cart is empty";
+    }
+}

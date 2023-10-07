@@ -62,14 +62,17 @@ function delElement(a){
     displayCart();
 }
 function displayCart(a){
-    let j=0;
+    let j=0, total=0;
     document.getElementById('count').innerHTML=cart.length;
+    document.getElementById('total').innerHTML = "R " +0+" .00";
     if(categories.length == 0){
         document.getElementById('cartItem').innerHTML = "Your cart is empty";
     }else{
         document.getElementById('cartItem').innerHTML = cart.map((items)=>
         {
             var {image, title, price} = items;
+            total=total+price;
+            document.getElementById('total').innerHTML = "R "+total+" .00";
             return(
                 `<div class='cart-item>
                 <div class='row-img>

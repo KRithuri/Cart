@@ -22,3 +22,8 @@ body{
     justify-content: space-between;
     padding: 15px;
 }
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}

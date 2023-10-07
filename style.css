@@ -5,3 +5,9 @@
     font-family: 'poppins',sans-serif;
     font-size: 18px;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

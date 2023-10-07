@@ -56,6 +56,11 @@ function addtocart(a){
     cart.push({...categories[a]});
     displayCart();
 }
+
+function delElement(a){
+    cart.splice(a, 1);
+    displayCart();
+}
 function displayCart(a){
     let j=0;
     if(categories.length == 0){

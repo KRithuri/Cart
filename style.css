@@ -27,3 +27,12 @@ body{
     font-weight: bold;
     color: white;
 }
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}

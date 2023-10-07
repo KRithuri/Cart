@@ -7,27 +7,34 @@ const product = [
     },
     {
         id: 1,
-        image: 'image/mixe.jpg',
-        title: 'Mixed roses',
+        image: 'image/radiance.jpg',
+        title: 'Radiance',
+        
         price: 450,
     },
     {
         id: 2,
-        image: 'image/mixed-st-joseph-lily-bunch.webp',
-        title: 'St Joseph Lilly Bunch',
+        image: 'image/sun&red.jpg',
+        title: 'Sunflowers & Red roses',
         price: 300,
     },
     {
         id: 3,
-        image: 'image/radiance.jpg',
-        title: 'Radiance',
-        price: 200,
+        image: 'image/mixe.jpg',
+        title: 'Mixed roses',
+        price: 250,
     },
     {
         id: 4,
         image: 'image/Pink-rose-garden.jpg',
         title: 'Pink Rose Garden',
-        price: 250,
+        price: 350,
+    },
+    {
+        id: 5,
+        image: 'image/white-rose-bouquet.webp',
+        title: 'White Rose Bouquet',
+        price: 200,
     }
 ];
 const categories = [...new Set(product.map((item)=>

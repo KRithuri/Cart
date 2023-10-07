@@ -64,7 +64,7 @@ function delElement(a){
 function displayCart(a){
     let j=0, total=0;
     document.getElementById('count').innerHTML=cart.length;
-    document.getElementById('total').innerHTML = "R " +0+" .00";
+    document.getElementById("total").innerHTML = "R " +0+" .00";
     if(categories.length == 0){
         document.getElementById('cartItem').innerHTML = "Your cart is empty";
     }else{
@@ -72,14 +72,14 @@ function displayCart(a){
         {
             var {image, title, price} = items;
             total=total+price;
-            document.getElementById('total').innerHTML = "R "+total+" .00";
+            document.getElementById("total").innerHTML = "R "+total+" .00";
             return(
-                `<div class='cart-item>
-                <div class='row-img>
+                `<div class='cart-item'>
+                <div class='row-img'>
                     <img class='rowing' src=${image}>
                 </div>
                 <p style='font-size:12px;'>${title}</p>
-                <h2 style='font-size:15px;'>${price}</h2>`+
+                <h2 style='font-size:15px;'>${price}.00</h2>`+
                 "<i class='fa-solid fa-trash' onclick='delElement("+ (j++)+ ")'></i></div>"
             );
         }).join('')
